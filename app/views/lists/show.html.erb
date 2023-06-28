@@ -1,0 +1,9 @@
+<h1>Lists#show</h1>
+<h2><%= @list.name %></h2>
+<ul>
+  <% @list.bookmarks.movies.each do |movie| %>
+    <li><%= movie.title %></li>
+    <li><%= movie.overview %></li>
+    <li><%= movie.poster_url %></li>
+  <% end %>
+</ul>
